@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GoogleOpenSans";
+  src: url("../public/fonts/Open_Sans/static/OpenSans-Bold.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Roboto;
+  src: url("../public/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: GoogleSans;
+  src: url("../public/fonts/Google_Sans/GoogleSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: GoogleSansRegular;
+  src: url("../public/fonts/Google_Sans/GoogleSans-Regular.ttf");
 }

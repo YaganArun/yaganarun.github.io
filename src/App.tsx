@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./Page/About";
+import AboutFrontend from "./Page/AboutFrontend";
+import AboutBackend from "./Page/AboutBackend";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+const bgColour: string = "bg-slate-100";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App h-screen relative -z-10 ${bgColour}`}>
+      <div className={`relative -z-10 ${bgColour}`}>
+        <Header />
+      </div>
+      <div className={`relative -z-10 h-[100%] ${bgColour} md:h-[80%]`}>
+        <About />
+      </div>
+      <div className={`h-[100%] relative -z-10 ${bgColour} `}>
+        <AboutFrontend />
+      </div>
+      <div className={`h-[100%] relative -z-10 ${bgColour} `}>
+        <AboutBackend />
+      </div>
+      <div className={`relative -z-10 bg-indigo-950`}>
+        <Footer />
+      </div>
     </div>
   );
 }
